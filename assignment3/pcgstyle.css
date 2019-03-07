@@ -1,0 +1,215 @@
+/*
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 3
+    Case Problem 4
+    
+    Park City Gazette
+    Author: Laura Dowd
+    Date:   Oct 22, 2018
+
+    Filename: pcg_front.html
+  */ 
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	font-family: verdana, arial, sans-serif;
+	position: relative;
+	overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.wrap {
+	position: absolute;
+	width: 100%;
+	height: 900px;
+	background-image: url("parkcity.png");
+	background-size: cover;
+	background-repeat: none;
+	
+	z-index: -1;
+
+}
+header {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+
+}
+
+header h1 {
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	font-family: times, serif;
+	letter-spacing: 0.6em;
+	text-transform: uppercase;
+}
+
+
+nav {
+	width: 100%;
+	height: 180px;
+	border-bottom: 30px black solid;
+	
+}
+nav ul {
+   float: left;
+   padding: 10px 15px;
+   width: 20%;
+
+}
+
+nav li {
+	
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: rgb(130, 131, 133);
+}
+
+a:hover {
+	color: white;
+}
+
+.wrap {
+
+}
+#container {
+	position: relative;
+	max-width: 900px;
+	min-width: 300px;
+	margin: 0px auto;	
+	padding: 20px;
+	padding-top: 0;
+	background-color: white;
+	z-index: 2;
+}
+
+
+.content {
+	padding: 20px;
+	width: 60%;
+	height: 800px;
+	margin-right:  0;
+	overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgb(237, 240, 239);
+
+}
+
+.content p {
+	font-size: 11px;
+	line-height: 2em;
+}
+
+.content img {
+	display: block;
+	width: 100%;
+	
+	margin: 0 auto;
+	border: 10px white solid;
+}
+
+
+.sidebar {
+	display: block;
+	float: right;
+	clear: right;
+	border-left: 1px black solid;
+	padding: 5px;
+	height: 600px;
+	width: 30%;
+	background-color: rgb(237, 240, 239);
+
+}
+
+
+.sidebar li {
+
+	list-style: none;
+	line-height: 2em;
+	text-align: right;
+	color: gray;
+	padding: 6px;
+
+}
+
+.sidebar a {
+	color: gray;
+	text-decoration: none;
+	padding: 6px;
+
+	
+}
+
+a:hover {
+	color: red;
+}
+
+.sidebar h3 {
+	padding-top: 40px;
+	font-family: times, serif;
+	font-size: 2.2em;
+	background-color: white;
+	
+}
+
+
+.sidebar h3 {
+	text-align: right;
+	border-bottom: 1px black solid;
+}
+.sidebar img {
+	width: 100%;
+	display: block;
+}
+
+
+footer {
+	text-align: center;
+	color: gray;
+	background-color: black;
+	
+}
+
+
+#container::after {    
+	clear: both;    
+	content: "";    
+	display: table; } 
+
+	/* tablet */
+
+	@media only screen and (min-width: 300px max-width: 600px;)
+	{
+		
+		body {
+			
+		}
+		.container {
+			width: 600px;
+		}
+		.content {
+			height: 300px;
+
+		}
+		.sidebar {
+			height: 300px;
+			
+		
+		}
+	}
+
+	
+	
